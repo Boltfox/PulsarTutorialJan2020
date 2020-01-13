@@ -1,5 +1,14 @@
 # Docker/Singularity Tutorial
 
+**Singularity installation guide:**
+[https://sylabs.io/guides/3.4/user-guide/installation.html](https://sylabs.io/guides/3.4/user-guide/installation.html)
+
+**Docker installation guide:**
+[https://docs.docker.com/install/](https://docs.docker.com/install/)
+
+**How to run Docker without 'sudo'**
+[https://docs.docker.com/install/linux/linux-postinstall/](https://docs.docker.com/install/linux/linux-postinstall/)
+
 ## Hello World
 
 ```
@@ -123,4 +132,25 @@ image once, and then transfer it to the machine where you need to use it.*
 The usage of singularity is more or less identical to Docker, with only some differences
 in syntax. 
 
+To run a terminal on a container (like *docker run ... bash*) 
+```
+singularity shell <path to image>
+```
+where **path to image** is where you store your image (just type in the image name if you're
+within the same directory as the image).
 
+Singularity keeps your privileges, so a tag like **-u** from Docker is not required.
+
+To mount directories use **-B**.
+
+To run something from within Singularity without using a terminal, use **exec**.
+
+If we run the same reading/plotting data code from before using Singularity, it will
+look like this
+```
+singularity exec -B /home/batman/work/PulsarTutorialJan2020/code/:/code
+    -B /home/batman/work/PulsarTutorialJan2020/data/:/data
+    -B /home/batman/work/PulsarTutorialJan2020/results/:/results
+    /home/batman/work/singularity_images/simple_py.simg
+    /code/example_program.py --data /data/data.txt --outdir /results
+```
