@@ -5,13 +5,28 @@ docker pull hello-world
 docker run hello-world
 ```
 
-## docker pull
+## Docker pull
 
-Pull an existing image from dockerhub
+Pull an existing container from dockerhub
 ```
 docker pull <image name>
 ```
-Most of the software we use can be found at
-[aaa](https://hub.docker.com/u/mpifrpsr)
+Most of the software we use can be found at the MPIfR dockerhub page:
 
-    
+[https://hub.docker.com/u/mpifrpsr](https://hub.docker.com/u/mpifrpsr)
+
+## Dockerfile
+
+Build your own container from a Dockerfile.
+
+cd into Dockerfile directory and run
+```
+docker build -t <name:tag> .
+```
+*(tag is optional)*
+
+## Launching image
+
+
+
+
