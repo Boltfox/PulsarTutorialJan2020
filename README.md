@@ -11,7 +11,7 @@ Pull an existing container from dockerhub
 ```
 docker pull <image name:tag>
 ```
-*(tag is optional, otherwise pulls latest*
+*(tag is optional, otherwise pulls latest)*
 
 Most of the software we use can be found at the MPIfR dockerhub page:
 
@@ -43,7 +43,7 @@ You can mount directories with the **-v** tag, e.g.
 ```
 docker run --rm -ti -v /home/batman/work/non_detections/:<path within image>
 ```
-The **<path within image>** can be whatever you like. However, it is often
+The **path within image** can be whatever you like. However, it is often
 convenient to use the directory structure as it is in the file system. 
 That way your code will not freak out if it depends on the file system's 
 directory structure. This can also help you realizing where you are working.
