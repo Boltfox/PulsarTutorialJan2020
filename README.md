@@ -2,6 +2,7 @@
 
 **Singularity installation guide:**
 [https://sylabs.io/guides/3.4/user-guide/installation.html](https://sylabs.io/guides/3.4/user-guide/installation.html)
+[**Singularity installation guide:**](https://sylabs.io/guides/3.4/user-guide/installation.html)
 
 **Docker installation guide:**
 [https://docs.docker.com/install/](https://docs.docker.com/install/)
