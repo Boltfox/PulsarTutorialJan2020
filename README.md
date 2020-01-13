@@ -1,8 +1,8 @@
 # Docker/Singularity Tutorial
 
-[**Singularity installation guide:**](https://sylabs.io/guides/3.4/user-guide/installation.html)
+[**Singularity installation guide**](https://sylabs.io/guides/3.4/user-guide/installation.html)
 
-[**Docker installation guide:**](https://docs.docker.com/install/)
+[**Docker installation guide**](https://docs.docker.com/install/)
 
 [**How to run Docker without 'sudo'**](https://docs.docker.com/install/linux/linux-postinstall/)
 
