@@ -1,14 +1,10 @@
 # Docker/Singularity Tutorial
 
-**Singularity installation guide:**
-[https://sylabs.io/guides/3.4/user-guide/installation.html](https://sylabs.io/guides/3.4/user-guide/installation.html)
 [**Singularity installation guide:**](https://sylabs.io/guides/3.4/user-guide/installation.html)
 
-**Docker installation guide:**
-[https://docs.docker.com/install/](https://docs.docker.com/install/)
+[**Docker installation guide:**](https://docs.docker.com/install/)
 
-**How to run Docker without 'sudo'**
-[https://docs.docker.com/install/linux/linux-postinstall/](https://docs.docker.com/install/linux/linux-postinstall/)
+[**How to run Docker without 'sudo'**](https://docs.docker.com/install/linux/linux-postinstall/)
 
 ## Hello World
 
@@ -25,9 +21,7 @@ docker pull <image name:tag>
 ```
 *(tag is optional, otherwise pulls latest)*
 
-Most of the software we use can be found at the MPIfR dockerhub page:
-
-[https://hub.docker.com/u/mpifrpsr](https://hub.docker.com/u/mpifrpsr)
+Most of the software we use can be found at the [MPIfR dockerhub page](https://hub.docker.com/u/mpifrpsr)
 
 ## Dockerfile
 
@@ -112,7 +106,7 @@ This should create a figure in your results directory.
 
 Singularity is available on many of our computers, so we need to convert our Docker
 image to Singularity. 
-One such way is to use [docker2singularity](https://github.com/singularityhub/docker2singularity)
+One such way is to use [**docker2singularity**](https://github.com/singularityhub/docker2singularity)
 ```
 docker run -v /var/run/docker.sock:/var/run/docker.sock 
     -v <your output dir>:/output 
