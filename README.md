@@ -147,5 +147,5 @@ singularity exec -B /home/batman/work/PulsarTutorialJan2020/code/:/code
     -B /home/batman/work/PulsarTutorialJan2020/data/:/data
     -B /home/batman/work/PulsarTutorialJan2020/results/:/results
     /home/batman/work/singularity_images/simple_py.simg
-    /code/example_program.py --data /data/data.txt --outdir /results
+    python /code/example_program.py --data /data/data.txt --outdir /results
 ```
