@@ -6,6 +6,8 @@
 
 [**How to run Docker without 'sudo'**](https://docs.docker.com/install/linux/linux-postinstall/)
 
+[**Link to old old old tutorial**](https://fpra.mpifr-bonn.mpg.de/lib/exe/fetch.php?media=computing:docksing.pdf)
+
 ## Hello World
 
 ```
